@@ -8,4 +8,11 @@ class AppState extends ChangeNotifier {
     matches.add(profile);
     notifyListeners();
   }
+
+  void removeLastMatch() {
+    if (matches.isNotEmpty) {
+      matches.removeLast();
+      notifyListeners();
+    }
+  }
 }
