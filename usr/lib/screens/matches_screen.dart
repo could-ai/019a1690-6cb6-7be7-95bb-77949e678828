@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import '../models/profile.dart';
+import '../providers/app_state.dart';
 
 class MatchesScreen extends StatelessWidget {
   const MatchesScreen({super.key});

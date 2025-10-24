@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
+import 'providers/app_state.dart';
 import 'screens/home_screen.dart';
 import 'screens/matches_screen.dart';
 import 'screens/profile_detail_screen.dart';
@@ -75,14 +76,5 @@ class _MainScreenState extends State<MainScreen> {
         onTap: _onItemTapped,
       ),
     );
-  }
-}
-
-class AppState extends ChangeNotifier {
-  List<Profile> matches = [];
-
-  void addMatch(Profile profile) {
-    matches.add(profile);
-    notifyListeners();
   }
 }

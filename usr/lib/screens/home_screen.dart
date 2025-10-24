@@ -4,6 +4,7 @@ import 'package:provider/provider.dart';
 import '../models/profile.dart';
 import '../data/mock_profiles.dart';
 import '../widgets/profile_card.dart';
+import '../providers/app_state.dart';
 import 'profile_detail_screen.dart';
 
 class HomeScreen extends StatefulWidget {
